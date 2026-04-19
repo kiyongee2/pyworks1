@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사진 갤러리</title>
+    <style>
+        h1{
+            margin: 10px; /* 제목과 이미지 사이의 간격 */
+        }
+        img{
+            width: 200px;
+            margin: 10px; /* 바깥 여백 추가 */
+            border-radius: 5px; /* 이미지 모서리를 둥글게 */
+        }
+    </style>
+</head>
+<body>
+    <h1>사진 갤러리</h1>
+    {% for photo in photos %}
+        <img src="{{ url_for('static', filename='photos/' + photo) }}" 
+                    alt="Photo">
+    {% endfor %}
+</body>
+</html>

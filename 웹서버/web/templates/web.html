@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 페이지</title>
+    <style>
+        body{
+            background-color: rgb(218, 244, 203);
+        }
+    </style>
+</head>
+<body>
+    <h1>웹 기초 기술</h1>
+    <h2>HTML</h2>
+    <h2>CSS</h2>
+
+    <h3>
+        <!-- target="_blank" 속성은 링크를 새 창에서 열도록 합니다. -->
+        <a href="https://www.naver.com" target="_blank">네이버로 가기</a>
+    </h3>
+    <p>
+        <img src="{{ url_for('static', filename='spring.jpg') }}" 
+                alt="봄 이미지" width="500">
+    </p>
+</body>
+</html>
